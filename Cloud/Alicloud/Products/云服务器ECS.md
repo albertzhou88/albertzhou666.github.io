@@ -2,7 +2,9 @@
 
 云服务器 ECS（Elastic Compute Service）是一种弹性可伸缩的云计算服务。
 
-[云服务器ECS](http://cloud.video.taobao.com/play/u/3897629815/p/1/e/6/t/1/301659704826.mp4)
+[云服务ECS主页](https://www.aliyun.com/product/ecs)
+
+[云服务器ECS视频](http://cloud.video.taobao.com/play/u/3897629815/p/1/e/6/t/1/301659704826.mp4)
 
 ## 应用场景
 
@@ -120,6 +122,21 @@
 
 
 
+## 实例
+
+[实例](https://help.aliyun.com/document_detail/108375.html)
+
+### 实例概述
+
+一台ECS实例等同于一台虚拟服务器，内含CPU、内存、操作系统、网络配置、磁盘等基础的组件。您可以使用阿里云提供的控制台、API等管理工具创建和管理ECS实例，像使用本地服务器一样管理ECS实例的状态、应用等，还可以灵活地升级计算、存储等能力。
+
+
+
+
+
+----
+
+
 
 ## 专业术语
 
@@ -151,9 +168,9 @@
 
 ## 学习进度
 
-| Date     | Progress                                 |      |
-| -------- | ---------------------------------------- | ---- |
+| Date     | Progress                                                     |      |
+| -------- | ------------------------------------------------------------ | ---- |
 | 2022/4/2 | [快速入门](https://help.aliyun.com/document_detail/163467.html?spm=a2c4g.11186623.0.0.1d46a665VNCwWZ) |      |
-|          |                                          |      |
-|          |                                          |      |
+| 2022/4/9 | [实例](https://help.aliyun.com/document_detail/108375.html)  |      |
+|          |                                                              |      |
 
