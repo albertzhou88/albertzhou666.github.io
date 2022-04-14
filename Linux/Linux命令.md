@@ -2,6 +2,8 @@
 
 [TOC]
 
+-----
+
 ## Settings
 
 ### /etc/resolv.conf - 配置DNS
