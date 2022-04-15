@@ -133,6 +133,18 @@ albert@CN0214004362W:~$ date "+%j"
 104
 ```
 
+### dd
+
+Convert and copy a file.
+
+```shell
+# 从/dev/zero设备文件中取出一个大小为10M的数据块，保存为file_10
+albert@CN0214004362W:~$ dd if=/dev/zero of=file_10 count=1 bs=10M
+1+0 records in
+1+0 records out
+10485760 bytes (10 MB, 10 MiB) copied, 0.0160966 s, 651 MB/s
+```
+
 
 
 ### df
@@ -201,6 +213,61 @@ WT_PROFILE_ID={51855cb2-8cce-5362-8f54-464b92b32386}
 _=/usr/bin/env
 ```
 
+### file
+
+Determine file type.
+
+在Linux系统中，由于文本、目录、设备等所有这些一切都统称为文件，而我们又不能单凭后缀就知道具体的文件类型，这时就需要使用file命令来查看文件类型了。
+
+```shell
+albert@CN0214004362W:~$ file file_10
+file_10: data
+albert@CN0214004362W:~$ file LinuxProbe.pdf
+LinuxProbe.pdf: PDF document, version 1.6
+albert@CN0214004362W:~$ file .bash_history
+.bash_history: ASCII text
+albert@CN0214004362W:~$ file /dev/zero
+/dev/zero: character special (1/5)
+```
+
+### find
+
+Search for files in a directory hierarchy.
+
+| 参数             | 功能                                       |
+| -------------- | ---------------------------------------- |
+| -name          | 匹配名称                                     |
+| -perm          | 匹配权限                                     |
+| -user          | 匹配所有者                                    |
+| -group         | 匹配所有组                                    |
+| -mtime -n +n   | 匹配修改内容的时间（-n指n天以内，+n指n天以前）               |
+| -atime -n +n   | 匹配访问文件的时间                                |
+| -ctime -n +n   | 匹配修改文件权限的时间                              |
+| -size          | 匹配文件的大小 (+50KB 为查找超过50KB的文件，-50KB为查找小于50KB的文件) |
+| -exec ... {}\; | 后面可跟用于进一步处理搜索结果的命令                       |
+
+
+
+```
+albert@CN0214004362W:~$ find /etc -name "host*"
+/etc/cloud/templates/hosts.alpine.tmpl
+/etc/cloud/templates/hosts.debian.tmpl
+/etc/cloud/templates/hosts.freebsd.tmpl
+/etc/cloud/templates/hosts.gentoo.tmpl
+/etc/cloud/templates/hosts.photon.tmpl
+/etc/cloud/templates/hosts.redhat.tmpl
+/etc/cloud/templates/hosts.suse.tmpl
+/etc/host.conf
+/etc/hostname
+/etc/hosts
+/etc/hosts.allow
+/etc/hosts.deny
+find: ‘/etc/polkit-1/localauthority’: Permission denied
+find: ‘/etc/ssl/private’: Permission denied
+```
+
+
+
 ###  free
 
 Display amount of free and used memory in the system.
@@ -211,6 +278,29 @@ albert@CN0214004362W:~$ free -h
 Mem:           15Gi       7.2Gi       8.5Gi        17Mi       223Mi       8.6Gi
 Swap:          48Gi       140Mi        47Gi
 ```
+
+### grep, egrep, fgrep, rgrep
+
+Print lines that match patterns.
+
+```shell
+albert@CN0214004362W:~$ grep -n ls .bash_history
+5:ls
+7:ls
+10:ls
+71:sudo apt install net-tools
+75:ls /proc/
+80:ls /proc/
+81:ls /proc/10/
+95:ls
+120:lsof
+121:man lsof
+122:lsof -i:por
+123:lsof -i:port
+124:lsof
+```
+
+
 
 ### head
 
@@ -350,6 +440,14 @@ D:\ on /mnt/d type drvfs (rw,noatime,uid=1000,gid=1000,case=off)
 E:\ on /mnt/e type drvfs (rw,noatime,uid=1000,gid=1000,case=off)
 ```
 
+### mv
+
+Move (rename) files.
+
+```
+
+```
+
 
 
 ### nslookup
@@ -395,6 +493,14 @@ Print name of current/working directory.
 ```shell
 albert@CN0214004362W:~$ pwd
 /home/albert
+```
+
+###  rm
+
+Remove files or directories.
+
+```
+
 ```
 
 
@@ -494,13 +600,41 @@ man free
 
 An archiving utility.
 
-```shell
-# 压缩目录
-tar czvf xxx.tar /xxx/yyy/
+| 参数   | 功能          |
+| ---- | ----------- |
+| -c   | 创建压缩文件      |
+| -x   | 解开压缩文件      |
+| -z   | 用gzip压缩或解压  |
+| -j   | 用bzip2压缩或解压 |
+| -v   | 显示压缩或解压的过程  |
+| -f   | 目标文件名       |
+| -C   | 指定解压到的目录    |
 
-# 解压到指定文件夹
-tar zxvf xxx.tar -C /xxx/yyy/
+
+
+```shell
+# 用gzip格式压缩打包目录abc
+albert@CN0214004362W:~$ tar -czvf abc.tar.gz abc
+abc/
+abc/xyz/
+abc/xyz/file_10
+
+# 解压到指定文件夹abc2
+albert@CN0214004362W:~$ tar -xzvf abc.tar.gz -C abc2
+abc/
+abc/xyz/
+abc/xyz/file_10
 ```
+
+### touch
+
+Change file timestamps.
+
+```
+
+```
+
+
 
 ### top
 
