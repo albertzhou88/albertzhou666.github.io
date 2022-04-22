@@ -1,5 +1,19 @@
 # Filesystem Hierarchy Standard (FHS)
 
+* [/](#/)
+
+* [/bin](#/bin)
+
+* [/etc](#/etc)
+
+* [/sbin](#/sbin)
+
+* [/usr](#/usr)
+
+* [/var](#/var)
+
+
+
 ## /
 
 ```bash
@@ -150,5 +164,3 @@ run    # Data relevant to running processes
 spool    # Application spool data
 tmp    # Temporary files preserved between system reboots
 ```
-
-
