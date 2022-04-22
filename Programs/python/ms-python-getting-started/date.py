@@ -15,7 +15,7 @@ print(output)
 
 year = today.year
 month = today.month
-day = today.date
+day = today.day
 hour = today.hour
 minute = today.minute
 second = today.second
@@ -23,4 +23,10 @@ second = today.second
 output = f'Year {year} \nMonth {month} \nDay {day}'
 print(output)
 output = f'Hour {hour} \nMinute {minute} \nSecond {second}'
+print(output)
+
+# input date
+birthday = input('When is your birthday (yyyy-mm-dd)?')
+birthday_date = datetime.strptime(birthday, '%Y-%m-%d')
+output = f'Birthday is {birthday_date}'
 print(output)
