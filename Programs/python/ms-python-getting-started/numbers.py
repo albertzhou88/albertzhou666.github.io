@@ -17,3 +17,8 @@
 days_in_feb = 28
 print(str(days_in_feb) + ' days in February')
 print(f'{days_in_feb} days in February')
+
+first_num = input('Enter first number ')
+second_num = input('Enter second number ')
+print(int(first_num) + int(second_num))
+print(float(first_num) + float(second_num))
