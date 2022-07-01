@@ -1,6 +1,6 @@
 # Git Tips
 
-## gnuts_handshake() failed: The TLS connection was non-properly terminated
+## fatal: unable to access 'https://github.com/xxx/xxx.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
 
 This proxy issue. Stop the proxy may solve the problem.
 
