@@ -15,3 +15,13 @@ https://docs.microsoft.com/en-us/windows/wsl/setup/environment
 https://docs.microsoft.com/en-us/windows/terminal/install
 
 https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
+
+
+
+### 设置Ubuntu WSL系统启动用户
+
+```shell
+ ubuntu.exe config --default-user albert 
+```
+
+"albert"是新用户。修改后，系统启动自动进入albert用户。
