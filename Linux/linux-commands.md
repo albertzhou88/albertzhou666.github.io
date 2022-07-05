@@ -1,6 +1,78 @@
 # Linux命令
 
-[TOC]
+* [cat](#cat)
+
+* [chown](#chown)
+
+* [cp](#cp)
+
+* [date](#date)
+
+* [dd](#dd)
+
+* [df](#df)
+
+* [du](#du)
+
+* [env](#env)
+
+* [file](#file)
+
+* [find](#find)
+
+* [free](#free)
+
+* [grep, egrep, fgrep, rgrep](#grep, egrep, fgrep, rgrep)
+
+* [head](#head)
+
+* [ifconfig](#ifconfig)
+
+* [ln](#ln)
+
+* [man](#man)
+
+* [mkdir](#mkdir)
+
+* [more](#more)
+
+* [mount](#mount)
+
+* [mv](#mv)
+
+* [nslookup](#nslookup)
+
+* [ps](#ps)
+
+* [pwd](#pwd)
+
+* [rm](#rm)
+
+* [shutdown](#shutdown)
+
+* [ssh-keygen](#ssh-keygen)
+
+* [stat](#stat)
+
+* [tail](#tail)
+
+* [tar](#tar)
+
+* [touch](#touch)
+
+* [top](#top)
+
+* [tr](#tr)
+
+* [uname](#uname)
+
+* [uptime](#uptime)
+
+* [wc](#wc)
+
+* [wget](#wget)
+
+* [which](#which)
 
 -----
 
@@ -19,8 +91,6 @@ nameserver 10.4.192.28
 nameserver fec0:0:0:ffff::1
 search domain.sensetime.com
 ```
-
-
 
 ### /proc/cpuinfo - 查看系统内核版本
 
@@ -74,7 +144,7 @@ albert@CN0214004362W:~$ getconf LONG_BIT
 
 ## Commands
 
-###  cat
+### cat
 
 Concatenate files and print on the standard output.
 
@@ -89,9 +159,7 @@ albert@CN0214004362W:~$ cat -n /etc/resolv.conf
      7  search domain.sensetime.com
 ```
 
-
-
-###  chown
+### chown
 
 Change file owner and group.
 
@@ -145,8 +213,6 @@ albert@CN0214004362W:~$ dd if=/dev/zero of=file_10 count=1 bs=10M
 10485760 bytes (10 MB, 10 MiB) copied, 0.0160966 s, 651 MB/s
 ```
 
-
-
 ### df
 
 Report file system disk space usage.
@@ -180,8 +246,6 @@ albert@CN0214004362W:~$ du -H -h
 5.0K    ./.ssh
 13K     .
 ```
-
-
 
 ### env
 
@@ -234,19 +298,17 @@ albert@CN0214004362W:~$ file /dev/zero
 
 Search for files in a directory hierarchy.
 
-| 参数             | 功能                                       |
-| -------------- | ---------------------------------------- |
-| -name          | 匹配名称                                     |
-| -perm          | 匹配权限                                     |
-| -user          | 匹配所有者                                    |
-| -group         | 匹配所有组                                    |
-| -mtime -n +n   | 匹配修改内容的时间（-n指n天以内，+n指n天以前）               |
-| -atime -n +n   | 匹配访问文件的时间                                |
-| -ctime -n +n   | 匹配修改文件权限的时间                              |
+| 参数             | 功能                                             |
+| -------------- | ---------------------------------------------- |
+| -name          | 匹配名称                                           |
+| -perm          | 匹配权限                                           |
+| -user          | 匹配所有者                                          |
+| -group         | 匹配所有组                                          |
+| -mtime -n +n   | 匹配修改内容的时间（-n指n天以内，+n指n天以前）                     |
+| -atime -n +n   | 匹配访问文件的时间                                      |
+| -ctime -n +n   | 匹配修改文件权限的时间                                    |
 | -size          | 匹配文件的大小 (+50KB 为查找超过50KB的文件，-50KB为查找小于50KB的文件) |
-| -exec ... {}\; | 后面可跟用于进一步处理搜索结果的命令                       |
-
-
+| -exec ... {}\; | 后面可跟用于进一步处理搜索结果的命令                             |
 
 ```
 albert@CN0214004362W:~$ find /etc -name "host*"
@@ -266,9 +328,7 @@ find: ‘/etc/polkit-1/localauthority’: Permission denied
 find: ‘/etc/ssl/private’: Permission denied
 ```
 
-
-
-###  free
+### free
 
 Display amount of free and used memory in the system.
 
@@ -300,8 +360,6 @@ albert@CN0214004362W:~$ grep -n ls .bash_history
 124:lsof
 ```
 
-
-
 ### head
 
 Output the first part of files.
@@ -331,8 +389,6 @@ cat /proc/cpuinfo | grep physical | uniq -c
 getconf LONG_BIT
 ```
 
-
-
 ### ifconfig
 
 Configure a network interface.
@@ -348,8 +404,6 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX packets 0  bytes 0 (0.0 B)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
-
-
 
 ### ln
 
@@ -375,8 +429,6 @@ ln -s /usr/local/jdk1.8/ jdk
 | N         | 定位到上一个搜索到的关键词    |
 | q         | 退出               |
 
-
-
 | 结构名称        | 代表意义  |
 | ----------- | ----- |
 | NAME        | 名称    |
@@ -391,8 +443,6 @@ ln -s /usr/local/jdk1.8/ jdk
 | SEE ALSO    | 相关的资料 |
 | HISTORY     | 维护历史  |
 | CONTACT     | 联系方式  |
-
-
 
 ### mkdir
 
@@ -413,8 +463,6 @@ File perusal filter for crt viewing.
 ```
 
 ```
-
-
 
 ### mount
 
@@ -447,8 +495,6 @@ Move (rename) files.
 ```
 
 ```
-
-
 
 ### nslookup
 
@@ -495,15 +541,13 @@ albert@CN0214004362W:~$ pwd
 /home/albert
 ```
 
-###  rm
+### rm
 
 Remove files or directories.
 
 ```
 
 ```
-
-
 
 ### shutdown
 
@@ -563,9 +607,7 @@ Change: 2022-04-14 14:22:22.738014600 +0800
  Birth: -
 ```
 
-
-
-###  tail
+### tail
 
 Output the last part of files.
 
@@ -594,23 +636,19 @@ man iostat
 man free
 ```
 
-
-
 ### tar
 
 An archiving utility.
 
-| 参数   | 功能          |
-| ---- | ----------- |
-| -c   | 创建压缩文件      |
-| -x   | 解开压缩文件      |
-| -z   | 用gzip压缩或解压  |
-| -j   | 用bzip2压缩或解压 |
-| -v   | 显示压缩或解压的过程  |
-| -f   | 目标文件名       |
-| -C   | 指定解压到的目录    |
-
-
+| 参数  | 功能          |
+| --- | ----------- |
+| -c  | 创建压缩文件      |
+| -x  | 解开压缩文件      |
+| -z  | 用gzip压缩或解压  |
+| -j  | 用bzip2压缩或解压 |
+| -v  | 显示压缩或解压的过程  |
+| -f  | 目标文件名       |
+| -C  | 指定解压到的目录    |
 
 ```shell
 # 用gzip格式压缩打包目录abc
@@ -633,8 +671,6 @@ Change file timestamps.
 ```
 
 ```
-
-
 
 ### top
 
@@ -683,8 +719,6 @@ MAN IOSTAT
 MAN FREE
 ```
 
-
-
 ### uname
 
 Print system information.
@@ -703,8 +737,6 @@ Tell how long the system has been running.
 albert@CN0214004362W:~$ uptime
  16:10:13 up  1:48,  0 users,  load average: 0.52, 0.58, 0.59
 ```
-
-
 
 ### wc
 
@@ -750,8 +782,6 @@ LinuxProbe.pdf         100%[============================>]  16.86M  2.29MB/s    
 2022-04-14 14:45:46 (2.29 MB/s) - ‘LinuxProbe.pdf’ saved [17676281/17676281]
 ```
 
-
-
 ### which
 
 Locate a command.
@@ -761,4 +791,3 @@ Locate a command.
 albert@CN0214004362W:~$ which ln
 /usr/bin/ln
 ```
-
