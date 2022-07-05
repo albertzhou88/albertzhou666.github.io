@@ -8,3 +8,10 @@
 
 NC_ShowSharedAccessUI 数据值改为 1
 
+### 安装配置Windows的Linux子系统
+
+https://docs.microsoft.com/en-us/windows/wsl/setup/environment
+
+https://docs.microsoft.com/en-us/windows/terminal/install
+
+https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
