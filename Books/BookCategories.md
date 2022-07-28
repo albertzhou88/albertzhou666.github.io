@@ -35,7 +35,7 @@
    5. Literature=文学
    6. Science=科普
 
-4. Comics+Graphic=动漫
+4. Comics+Graphic=动漫+绘本
 
 5. Computers=计算机
 
@@ -58,7 +58,7 @@
    4. University=大学
    5. Careers=职业
 
-7. Health+Fitness+Dieting=健康+健身
+7. Health+Fitness=健康+健身
 
    1. Aging=养老
    2. Beauty+Style=美妆+时尚
@@ -74,7 +74,9 @@
    12. TeanHealth=青少年健康
    13. WomenHealth=女性健康
 
-8. Languages
+8. Journals=期刊
+
+9. Languages
 
    1. Arabic=阿拉伯语
    2. Chinese=中文
@@ -84,9 +86,9 @@
    6. Russian=俄语
    7. Spanish=西班牙文
 
-9. Law=法律
+10. Law=法律
 
-10. Lifestyle=生活
+11. Lifestyle=生活
 
     1. Antiques+Collectibles=古董+收藏
     2. Crafts=手工
@@ -99,7 +101,7 @@
     9. Resort=度假
     10. HouseClean=收纳
 
-11. Literature=文学
+12. Literature=文学
 
     1. Ancient=古文
     2. Biographies=传记
@@ -119,20 +121,24 @@
     16. Suspense=悬疑
     17. Thriller=惊悚
 
-12. Magazines
+13. Magazines=杂志
 
-13. Journals
+14. Outdoors-户外
 
-14. Reference=文献
+    1. Hiking=徒步
+    2. Camping=露营
+    3. SurvivalSkills=生存技巧
 
-15. Romance=爱情
+15. Reference=文献
+
+16. Romance=爱情
 
     1. Love=恋爱
     2. Marriage=婚姻
     3. Emotions=情感
     4. Sex=性知识
 
-16. SocialSciences=社科
+17. SocialSciences=社科
 
     1. Politics=政治
     2. ChineseStudy=国学
@@ -142,7 +148,7 @@
     6. Religion=宗教
     7. Culture=文化
 
-17. SelfHelp=励志
+18. SelfHelp=励志
 
     1. Emotions=情感
     2. Mid-life=中年
@@ -152,7 +158,7 @@
     6. StressManagement=压力管理
     7. TimeManagement=时间管理
 
-18. Science+Technology=科技
+19. Science+Technology=科技
 
     1. Architecture=建筑
     2. Agriculture=农业
@@ -169,19 +175,13 @@
     13. PopularSciense=科普
     14. ElectronicEngineering=电子
 
-19. Sports=体育
+20. Sports=体育
 
     1. Running=跑步
     2. Swimming=游泳
     3. Skiing=滑雪
     4. Skate=滑冰
     5. Yoga=瑜伽
-
-20. Outdoors-户外
-
-    1. Hiking=徒步
-    2. Camping=露营
-    3. SurvivalSkills=生存技巧
 
 21. Travel=旅游
 
