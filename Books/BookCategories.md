@@ -147,21 +147,21 @@
     2. Agriculture=农业
     3. Archaeology=考古
     4. Astronomy=天文
-    5. Biological=生物
+    5. Biology=生物
     6. Chemistry=化学
     7. Ecology=生态
-    8. Environment=环境
-    9. Geography=地理
-    10. Mathematics=数学
-    11. Medicine=医学
-    12. Physics=物理
-    13. PopularSciense=科普
-    14. ElectronicEngineering=电子
+    8. Electronic=电子
+    9. Environment=环境
+    10. Geography=地理
+    11. Mathematics=数学
+    12. Medicine=医学
+    13. Physics=物理
+    14. Popular=科普
 
 18. **SelfHelp=励志**
 
     1. Emotions=情感
-    2. Mid-life=中年
+    2. Midlife=中年
     3. Motivational=激励
     4. Relationships=人际关系
     5. SocialSkills=社交技巧
