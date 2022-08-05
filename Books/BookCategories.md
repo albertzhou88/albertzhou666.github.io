@@ -170,13 +170,13 @@
 
 19. **SocialSciences=社科**
 
-    1. Politics=政治
-    2. ChineseStudy=国学
+    1. ChineseStudy=国学
+    2. Culture=文化
     3. History=历史
-    4. Psychology=心理学
-    5. Philosophy=哲学
-    6. Religion=宗教
-    7. Culture=文化
+    4. Philosophy=哲学
+    5. Politics=政治
+    6. Psychology=心理学
+    7. Religion=宗教
 
 20. **Sports=体育**
 
@@ -189,7 +189,7 @@
 
 21. **Travel=旅游**
 
-    1. Food+Lodging+Transportation=食宿行
+    1. Basics=衣食住行
     2. Africa=非洲
     3. Asia=亚洲
     4. China=中国
