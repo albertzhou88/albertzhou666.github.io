@@ -1,0 +1,49 @@
+@startuml
+Client -> Server: (1)请求网站 https://www.foo.com
+note left
+  验证
+  密钥
+end note
+
+Server -> Server: (2)生成公钥和私钥
+
+Server -> Client: (3)响应公钥
+note right
+  公钥
+  私钥
+end note
+
+Client -> Client: (4)验证
+note left #red
+  未通过: 提示https告警
+end note
+
+Client -> Client:
+note left
+  通过: 生成随机key
+end note
+
+Client -> Server: (5)使用公钥对随机key加密传输
+note left
+  复制密钥
+end note
+note right
+  使用私钥
+  解密
+end note
+
+Server -> Server: 
+note right
+  获取key
+end note
+
+Server -> Client: (7)使用客户端key响应加密内容
+note right
+  使用key
+  隐藏内容
+end note
+note left
+  (8)使用key
+  解密内容
+end note
+@enduml
