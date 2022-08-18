@@ -1,0 +1,26 @@
+" Vim with all enhancements
+source $VIMRUNTIME/vimrc_example.vim
+
+set nocompatible	" Use Vim defaults instead of 100% vi compatibility
+set history=100     " keep 50 lines of comman line history
+set ruler 		    " show the cursor position all the time
+set hlsearch		" highlight all matching phrases
+set ignorecase		" ignore upper/lower case when searching
+set incsearch		" show partial matches for a search phrase
+set backspace=indent,eol,start 		" backspace and cursor keys wrap to previous/next line
+set wrap		    " long lines wrap
+set columns=120		" width of the display
+set number		    " show the line number for each line
+set tabstop=4		" number of spaces a <TAB> in the text stands for
+set shiftwidth=4	" number of spaces used for each step of auto-indent
+set smarttab		" a <TAB> in an indent inserts 'shiftwidth' spaces
+set expandtab		" expand <TAB> to spaces in Insert mode
+set encoding=utf-8	" character encoding used in Vim:"
+set nobackup        " don't save backup file
+set showcmd         " show partial command
+
+filetype on         " enable file type detetion
+filetype plugin on  " enable and load plugin
+filetype indent on  " load an indent file
+syntax on           " enable syntax highlight
+
